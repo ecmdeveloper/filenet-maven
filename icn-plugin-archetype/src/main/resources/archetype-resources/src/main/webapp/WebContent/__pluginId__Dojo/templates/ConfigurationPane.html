@@ -1,0 +1,22 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+<div>
+    <table class="propertyTable" role="presentation">
+        <tr>
+            <td class="propertyRowLabel">
+                <span class="required">*</span>
+                <label for="${symbol_dollar}{id}_webDavPath">${symbol_dollar}{_resources.webDavPathLabel}</label>&nbsp;
+				<div data-dojo-type="ecm/widget/HoverHelp"
+					data-dojo-attach-point="ecServerURIHoverHelp"
+					message="${symbol_dollar}{_resources.webDavPathInfo}"></div>
+			</td>
+            <td class="propertyRowValue">
+				<div id="${symbol_dollar}{id}_webDavPath" data-dojo-attach-point="webDavPath"
+					data-dojo-attach-event="onKeyUp: _onFieldChange"
+					data-dojo-type="ecm/widget/ValidationTextBox" required="true"
+					trim="true"></div>
+			</td>
+        </tr>
+    </table>
+</div>
